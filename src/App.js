@@ -1,10 +1,19 @@
-import "./styles.css";
+import "./styles.scss";
+import MainNavBar from "./MainNavBar";
+import Home from "./Home";
+import background from "../images/background.jpg";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div
+      className="App"
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundSize: "1000px 1080px"
+      }}
+    >
+      <MainNavBar />
+      <Home />
     </div>
   );
 }
