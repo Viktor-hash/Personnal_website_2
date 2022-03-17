@@ -15,7 +15,6 @@ body{
 .App {
   font-family: "Special Elite", cursive;
   text-align: center;
-
 }
 
 /*-----Nav Bar part------------------*/
@@ -42,9 +41,48 @@ body{
   h3{
     display: inline;
   }
+  h1:hover{
+    text-shadow: 2px 2px;
+    cursor:crosshair;
+    transition: .4s ease-out;
+  }
+  h3:hover{
+      background-color: black;
+      color:whitesmoke;
+      cursor:crosshair;
+      transition: .4s ease-out;
+  }
 }
 
+/*-----Work Bar nav part------------------*/
 
+.workNav{
+  z-index:1;
+  position: fixed;
+  margin-top: 150px;
+  height:25px;
+  width:100%;
+  ul{
+    margin-top:0px;
+    padding:0;
+    justify-content: center;
+    display: flex;
+    list-style-type:none;
+  }
+  li{
+    display: inline;
+    margin-inline: 25px;
+  }
+  h3{
+    display: inline;
+  }
+  h3:hover{
+    background-color: black;
+    color:whitesmoke;
+    cursor:crosshair;
+    transition: .4s ease-out;
+  }
+}
 
 /*-----Home page part------------------*/
 
@@ -62,10 +100,18 @@ body{
     position:relative;
     width:100%;
     height:100%;
+    .logo_arstation{
+      position:absolute;
+      left: 50%;
+      top: 40%;
+      transform: translate(-50%,-50%);
+      color:black;
+      opacity: 0.9;
+    }
     .logo_github{
       position:absolute;
       left: 50%;
-      top: 15%;
+      top: 20%;
       transform: translate(-50%,-50%);
       color:black;
       opacity: 0.9;
@@ -81,7 +127,7 @@ body{
     .logo_linkedin{
       position:absolute;
       left: 50%;
-      top: 45%;
+      top: 10%;
       transform: translate(-50%,-50%);
       color:black;
       opacity: 0.9;
@@ -93,6 +139,11 @@ body{
       transform: translate(-50%,-50%);
       color:black;
       opacity: 0.9;
+    }
+    .logo_github:hover,.logo_instagram:hover,.logo_linkedin:hover,.logo_projects:hover,.logo_arstation:hover{
+      background-color: black;
+      color:whitesmoke;
+      cursor:crosshair;
     }
   }
 }
@@ -162,30 +213,205 @@ body{
       position:relative;
       width:100%;
       height:100%;
+      .logo_arstation{
+        position:absolute;
+        left: 75%;
+        top: 65%;
+        transform: translate(-50%,-50%);
+        color:black;
+        opacity: 0.9;
+      }
       .logo_github{
         position:absolute;
-        left: 50%;
-        top: 25%;
+        left: 75%;
+        top: 35%;
         transform: translate(-50%,-50%);
         color:black;
         opacity: 0.9;
       }
       .logo_instagram{
         position:absolute;
-        left: 50%;
-        top: 50%;
+        left: 25%;
+        top: 65%;
         transform: translate(-50%,-50%);
         color:black;
         opacity: 0.9;
       }
       .logo_linkedin{
         position:absolute;
-        left: 50%;
-        top: 75%;
+        left: 25%;
+        top: 35%;
         transform: translate(-50%,-50%);
         color:black;
         opacity: 0.9;
       }
     }
   }
+}
+
+/*-----Project page part------------------*/
+
+/* Create three equal columns that floats next to each other */
+.column_project {
+  float: left;
+  margin-top:175px;
+  width: 33.33%;
+  padding: 10px;
+  height: 200px;
+  padding-inline: 5%;
+  .container_float{
+    position:relative;
+    width:100%;
+    height:100%;
+    border: 3px dotted;
+    opacity:0.9;
+    .logo_title{
+      transition: .4s ease-out;
+    }
+    .logo_pet{
+      position:absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      color:black;
+      opacity: 0.9;
+      transition: .4s ease-out;
+    }
+    .logo_hm{
+      position:absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      color:black;
+      opacity: 0.9;
+      transition: .4s ease-out;
+    }
+    .logo_binary_tree{
+      position:absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      color:black;
+      opacity: 0.9;
+      transition: .4s ease-out;
+    }
+    &:before {
+      position: absolute; 
+      left: 0;
+      bottom: 0;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      transform-origin: 0 bottom 0;
+      transform: scaleY(0);
+      transition: .4s ease-out;
+    }
+    
+    &:hover {
+      cursor:crosshair;
+      .logo_pet,.logo_hm,.logo_binary_tree{
+        color: #FFF;
+      }
+      .logo_title{
+        color: #FFF;
+      }
+      &:before {
+        transform: scaleY(1);
+      }
+    }
+  }
+}
+
+/* Clear floats after the columns */
+.row_project:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer_projects{
+  padding: 10px;
+  text-align: center;
+  p{
+    font-size: 20px;
+  }
+  margin-top:290px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column_project {
+    width: 100%;
+    height:200px;
+  }
+}
+
+/*-----About page part------------------*/
+
+.column_about {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 200px;
+  padding-inline: 5%;
+  margin-top:150px;
+  height: 880px;
+  .container_float{
+    position:relative;
+    width:100%;
+    height:100%;
+    opacity:0.9;
+    .about_content{text-align: justify;}
+  }
+}
+
+.row_about:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column_about {
+    width: 100%;
+    height:250px;
+  }
+}
+
+/*-----Contact page part------------------*/
+
+.column_contact {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 200px;
+  padding-inline: 5%;
+  margin-top:150px;
+  height: 880px;
+  .container_float{
+    position:relative;
+    width:100%;
+    height:100%;
+    opacity:0.9;
+    .contact_content{text-align: Left;
+      a{color:black;
+      text-decoration: none;
+    font-weight:bold;}
+      a:hover{
+        background-color: black;
+        color:whitesmoke;
+        cursor:crosshair;
+      }
+    }
+    .contact_content_question{text-align: Left;font-weight: bold;}
+  }
+}
+
+.row_contact:after {
+  content: "";
+  display: table;
+  clear: both;
 }
