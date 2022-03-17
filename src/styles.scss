@@ -415,3 +415,76 @@ body{
   display: table;
   clear: both;
 }
+
+/*-----Drawing page part------------------*/
+
+.complete_gallery{
+  height:1400px;
+}
+
+.art_link{
+  color:black;
+}
+.art_link:hover{
+  background-color: black;
+  color:whitesmoke;
+  cursor:crosshair;
+  transition: .4s ease-out;
+}
+
+.gallery_position{
+  margin-top:200px;
+  position:absolute;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  height: 700px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+    height:550px;
+  }
+  .complete_gallery{
+    height:2300px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+    height:600px;
+  }
+  .complete_gallery{
+    height:5000px;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

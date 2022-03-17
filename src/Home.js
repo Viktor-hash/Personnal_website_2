@@ -6,9 +6,16 @@ import {
 import { GiMaterialsScience } from "react-icons/gi";
 import { FaArtstation } from "react-icons/fa";
 import Typical from "react-typical";
+import { useNavigate } from "react-router-dom";
 
 //https://stackoverflow.com/questions/27752500/how-to-have-an-anim-gif-on-a-link-and-play-it-on-hover-and-reset
 export default function Home() {
+  let navigate = useNavigate();
+
+  const OnProjectClicked = () => {
+    navigate("/work");
+  };
+
   return (
     <>
       <div class="row">
@@ -53,7 +60,11 @@ export default function Home() {
         <div class="column right_side">
           <div class="container_float">
             <h2>My Projects :</h2>
-            <GiMaterialsScience size={200} className="logo_projects" />
+            <GiMaterialsScience
+              size={200}
+              className="logo_projects"
+              onClick={OnProjectClicked}
+            />
           </div>
         </div>
       </div>
