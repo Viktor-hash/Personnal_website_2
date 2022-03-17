@@ -17,62 +17,60 @@ export default function Projects() {
   const OnPetClicked = () => {
     navigate("petpawpularity");
   };
-
+  const OnHMClicked = () => {
+    navigate("HMrecommendation");
+  };
+  const OnBinaryClicked = () => {
+    navigate("Binarytree");
+  };
+  const OnTreasuryClicked = () => {
+    navigate("Treasury");
+  };
+  const OnMultiClicked = () => {
+    navigate("MultiAgent");
+  };
+  const OnLibraryClicked = () => {
+    navigate("LibraryProject");
+  };
   return (
     <>
       <div class="row_project">
         <div class="column_project">
-          <div class="container_float">
+          <div class="container_float" onClick={OnPetClicked}>
             <h3 className="logo_title">Pet Pawpularity :</h3>
-            <MdPets onClick={OnPetClicked} size={90} className="logo_pet" />
+            <MdPets size={90} className="logo_pet" />
           </div>
         </div>
         <div class="column_project">
-          <div class="container_float">
+          <div class="container_float" onClick={OnHMClicked}>
             <h3>H&M recommendation :</h3>
-            <GiClothes onClick={OnPetClicked} size={90} className="logo_hm" />
+            <GiClothes size={90} className="logo_hm" />
           </div>
         </div>
         <div class="column_project">
-          <div class="container_float">
+          <div class="container_float" onClick={OnBinaryClicked}>
             <h3>Binary Tree :</h3>
-            <GiFamilyTree
-              onClick={OnPetClicked}
-              size={90}
-              className="logo_binary_tree"
-            />
+            <GiFamilyTree size={90} className="logo_binary_tree" />
           </div>
         </div>
       </div>
       <div class="row_project">
         <div class="column_project">
-          <div class="container_float">
+          <div class="container_float" onClick={OnTreasuryClicked}>
             <h3>Treasury management :</h3>
-            <GiMoneyStack
-              onClick={OnPetClicked}
-              size={90}
-              className="logo_binary_tree"
-            />
+            <GiMoneyStack size={90} className="logo_binary_tree" />
           </div>
         </div>
         <div class="column_project">
-          <div class="container_float">
+          <div class="container_float" onClick={OnMultiClicked}>
             <h3>multi-agent system :</h3>
-            <AiOutlineCluster
-              onClick={OnPetClicked}
-              size={90}
-              className="logo_binary_tree"
-            />
+            <AiOutlineCluster size={90} className="logo_binary_tree" />
           </div>
         </div>
         <div class="column_project">
-          <div class="container_float">
+          <div class="container_float" onClick={OnLibraryClicked}>
             <h3>Sql library database :</h3>
-            <SiPostgresql
-              onClick={OnPetClicked}
-              size={90}
-              className="logo_binary_tree"
-            />
+            <SiPostgresql size={90} className="logo_binary_tree" />
           </div>
         </div>
       </div>

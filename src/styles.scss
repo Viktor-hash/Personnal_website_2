@@ -363,6 +363,16 @@ body{
     width:100%;
     height:100%;
     opacity:0.9;
+    a{
+      font-weight: bold;
+      color:black;
+    }
+    a:hover{
+      background-color: black;
+      color:whitesmoke;
+      cursor:crosshair;
+      transition: .4s ease-out;
+    }
     .about_content{text-align: justify;}
   }
 }
@@ -423,6 +433,7 @@ body{
 }
 
 .art_link{
+  font-weight: bold;
   color:black;
 }
 .art_link:hover{
@@ -487,4 +498,90 @@ div.desc {
   content: "";
   display: table;
   clear: both;
+}
+
+/*-----Petpawpularity part------------------*/
+
+.column_pet {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 200px;
+  padding-inline: 5%;
+  margin-top:175px;
+  height: 880px;
+  .container_float{
+    position:relative;
+    width:100%;
+    height:100%;
+    opacity:0.9;
+    a{
+      font-weight: bold;
+      color:black;
+    }
+    a:hover{
+      background-color: black;
+      color:whitesmoke;
+      cursor:crosshair;
+      transition: .4s ease-out;
+    }
+    .pet_content{text-align: justify;}
+  }
+}
+
+.row_pet:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column_pet {
+    width: 100%;
+    height:400px;
+  }
+}
+
+/*-----Binary part------------------*/
+
+.column_binary {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 200px;
+  padding-inline: 5%;
+  margin-top:175px;
+  height: 880px;
+  .container_float{
+    position:relative;
+    width:100%;
+    height:100%;
+    opacity:0.9;
+    a{
+      font-weight: bold;
+      color:black;
+    }
+    a:hover{
+      background-color: black;
+      color:whitesmoke;
+      cursor:crosshair;
+      transition: .4s ease-out;
+    }
+    .binary_content{text-align: justify;}
+  }
+}
+
+.row_binary:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column_binary {
+    width: 100%;
+    height:100px;
+  }
 }

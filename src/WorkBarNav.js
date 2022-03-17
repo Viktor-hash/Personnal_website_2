@@ -4,7 +4,7 @@ export default function WorkBarNav() {
   let navigate = useNavigate();
 
   const OnProjectClicked = () => {
-    navigate("projects");
+    navigate("");
   };
 
   const OnDrawingsClicked = () => {
