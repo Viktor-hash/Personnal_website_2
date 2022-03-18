@@ -1,11 +1,7 @@
 import "./styles.scss";
 import MainNavBar from "./MainNavBar";
 import Home from "./Home";
-//import background from "./background.jpg";
-//      style={{
-//  backgroundImage: `url(${background})`,
-//  backgroundSize: "1000px 1080px"
-//}}
+import background from "./background.jpg";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Work from "./Work";
 import Projects from "./Projects";
@@ -21,7 +17,13 @@ import LibraryProject from "./LibraryProject";
 
 export default function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundSize: "1000px 1080px"
+      }}
+    >
       <BrowserRouter>
         <MainNavBar />
         <Routes>
