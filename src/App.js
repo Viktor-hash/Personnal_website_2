@@ -1,7 +1,7 @@
 import "./styles.scss";
 import MainNavBar from "./MainNavBar";
 import Home from "./Home";
-import background from "../images/background.jpg";
+import background from "./images/background.jpg";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Work from "./Work";
 import Projects from "./Projects";

@@ -1,11 +1,11 @@
-import manipulatrice from "../gallery/victor-perrault-manipulatrice-portrait.jpg";
-import bowie from "../gallery/bowie.jpg";
-import bulbizarre from "../gallery/bulbizarre.jpg";
-import figure from "../gallery/figure.jpg";
-import portrait from "../gallery/portrait.jpg";
-import portrait_girl from "../gallery/portrait_girl.jpg";
-import shooter from "../gallery/shooter.jpg";
-import walk from "../gallery/walk.jpg";
+import manipulatrice from "./gallery/victor-perrault-manipulatrice-portrait.jpg";
+import bowie from "./gallery/bowie.jpg";
+import bulbizarre from "./gallery/bulbizarre.jpg";
+import figure from "./gallery/figure.jpg";
+import portrait from "./gallery/portrait.jpg";
+import portrait_girl from "./gallery/portrait_girl.jpg";
+import shooter from "./gallery/shooter.jpg";
+import walk from "./gallery/walk.jpg";
 
 export default function Drawings() {
   return (
