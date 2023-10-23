@@ -45,7 +45,7 @@ export default function Petpawpularity() {
         </div>
       </div>
       <div class="footer_projects">
-        <p>© Victor Perrault 2022. Currently in Paris</p>
+        <p>© Victor Perrault 2023. Currently in Hong Kong</p>
       </div>
     </>
   );

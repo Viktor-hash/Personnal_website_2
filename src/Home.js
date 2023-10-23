@@ -1,7 +1,7 @@
 import {
   AiFillGithub,
   AiOutlineInstagram,
-  AiOutlineLinkedin
+  AiOutlineLinkedin,
 } from "react-icons/ai";
 import { GiMaterialsScience } from "react-icons/gi";
 import { FaArtstation } from "react-icons/fa";
@@ -42,14 +42,14 @@ export default function Home() {
             <h3 class="Typed_text">
               <Typical
                 steps={[
-                  "I am a Data Scientist and a Developper :) ",
+                  "I am a Developper and Data analyst :) ",
                   4000,
                   "",
                   1000,
                   "You can learn more about me in the about section :) ",
                   4000,
                   "",
-                  1000
+                  1000,
                 ]}
                 loop={Infinity}
                 wrapper="p"
@@ -69,7 +69,7 @@ export default function Home() {
         </div>
       </div>
       <div class="footer">
-        <p>© Victor Perrault 2022. Currently in Paris</p>
+        <p>© Victor Perrault 2023. Currently in Hong Kong</p>
       </div>
     </>
   );

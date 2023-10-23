@@ -7,10 +7,10 @@ export default function About() {
             <h2>About :</h2>
             <br />
             <p className="about_content">
-              I am a student in Artificial Intelligence and Data Science in
-              Paris. I love to learn new things and make projects with my
-              friends. I am interested by technologies, art and travels. I love
-              movies, animation, design and games.
+              I am a full stack developer at Société Générale in Hong Kong. I
+              love to learn new things and make projects with my friends. I am
+              interested by technologies, art and travels. I love movies,
+              animation, design and games.
             </p>
           </div>
         </div>
@@ -18,6 +18,8 @@ export default function About() {
           <div class="container_float">
             <h2>Experience :</h2>
             <br />
+            <h2>Société Générale</h2>
+            <p>VIE full stack developer, NOV 2022 - CURRENT</p>
             <h2>Orange Advertising</h2>
             <p>Trainee data analyst, FEB 2022 - JUL 2022</p>
             <h2>CEA</h2>
@@ -31,7 +33,7 @@ export default function About() {
         </div>
       </div>
       <div class="footer_projects">
-        <p>© Victor Perrault 2022. Currently in Paris</p>
+        <p>© Victor Perrault 2023. Currently in Hong Kong</p>
       </div>
     </>
   );

@@ -29,7 +29,7 @@ export default function Contact() {
             </p>
             <br />
             <p className="contact_content">
-              My Arstation :{" "}
+              My Artsation :{" "}
               <a href="https://victorsketches.artstation.com/">
                 Victor Perrault
               </a>
@@ -38,7 +38,7 @@ export default function Contact() {
         </div>
       </div>
       <div class="footer_projects">
-        <p>© Victor Perrault 2022. Currently in Paris</p>
+        <p>© Victor Perrault 2023. Currently in Hong Kong</p>
       </div>
     </>
   );
